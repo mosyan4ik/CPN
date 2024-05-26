@@ -1,0 +1,161 @@
+digraph {
+  node [label="N", fillcolor="#FFFFFF", fontcolor="#000000", style=filled];
+  edge [style="solid"];
+  graph [splines="true", overlap="false"];
+  subgraph cluster_2241386753296 {
+    graph [
+      style="invis"
+    ];
+    node_0
+      [
+        shape="ellipse"
+        label="A\n{('q', 0), ('q', 0), ('q', 0)}"
+        tooltip="A"
+        id="node_0"
+      ];
+    node_1
+      [
+        shape="ellipse"
+        label="B\n{('p', 0), ('p', 0)}"
+        tooltip="B"
+        id="node_1"
+      ];
+    node_10
+      [
+        shape="rectangle"
+        label="T3\nTrue"
+        tooltip="T3"
+        id="node_10"
+      ];
+    node_11
+      [
+        shape="rectangle"
+        label="T4\nTrue"
+        tooltip="T4"
+        id="node_11"
+      ];
+    node_12
+      [
+        shape="rectangle"
+        label="T5\nTrue"
+        tooltip="T5"
+        id="node_12"
+      ];
+    node_2
+      [
+        shape="ellipse"
+        label="C\n{}"
+        tooltip="C"
+        id="node_2"
+      ];
+    node_3
+      [
+        shape="ellipse"
+        label="D\n{}"
+        tooltip="D"
+        id="node_3"
+      ];
+    node_4
+      [
+        shape="ellipse"
+        label="E\n{}"
+        tooltip="E"
+        id="node_4"
+      ];
+    node_5
+      [
+        shape="ellipse"
+        label="R\n{'e'}"
+        tooltip="R"
+        id="node_5"
+      ];
+    node_6
+      [
+        shape="ellipse"
+        label="S\n{'e', 'e', 'e'}"
+        tooltip="S"
+        id="node_6"
+      ];
+    node_7
+      [
+        shape="ellipse"
+        label="T\n{'e', 'e'}"
+        tooltip="T"
+        id="node_7"
+      ];
+    node_8
+      [
+        shape="rectangle"
+        label="T1\nx == \"q\""
+        tooltip="T1"
+        id="node_8"
+      ];
+    node_9
+      [
+        shape="rectangle"
+        label="T2\nTrue"
+        tooltip="T2"
+        id="node_9"
+      ];
+    node_0 -> node_8
+      [
+        arrowhead="normal"
+        label=" (x, i) "
+      ];
+    node_8 -> node_1
+      [
+        arrowhead="normal"
+        label=" ((\"q\", i),) "
+      ];
+    node_1 -> node_9
+      [
+        arrowhead="normal"
+        label=" (x, i) "
+      ];
+    node_6 -> node_9
+      [
+        arrowhead="normal"
+        label=" (e, E) "
+      ];
+    node_9 -> node_2
+      [
+        arrowhead="normal"
+        label=" (x, i) "
+      ];
+    node_2 -> node_10
+      [
+        arrowhead="normal"
+        label=" (x, i) "
+      ];
+    node_10 -> node_3
+      [
+        arrowhead="normal"
+        label=" (x, i) "
+      ];
+    node_3 -> node_11
+      [
+        arrowhead="normal"
+        label=" (x, i) "
+      ];
+    node_11 -> node_4
+      [
+        arrowhead="normal"
+        label=" (x, i+1) "
+      ];
+    node_4 -> node_12
+      [
+        arrowhead="normal"
+        label=" (x, i) "
+      ];
+    node_12 -> node_0
+      [
+        arrowhead="normal"
+        label=" ((\"q\", i+1),) "
+      ];
+    node_12 -> node_1
+      [
+        arrowhead="normal"
+        label=" ((\"p\", i+1),) "
+      ];
+  }
+}
